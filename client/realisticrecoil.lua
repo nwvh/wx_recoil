@@ -1,4 +1,4 @@
-if wx.realisticRecoil then
+if wx.verticalRecoil then
   Citizen.CreateThread(function()
 	while true do 
     Citizen.Wait(0)
