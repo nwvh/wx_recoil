@@ -1,5 +1,5 @@
-
-Citizen.CreateThread(function()
+if wx.realisticRecoil then
+  Citizen.CreateThread(function()
 	while true do 
     Citizen.Wait(0)
         local ped = PlayerPedId()
@@ -51,6 +51,7 @@ Citizen.CreateThread(function()
                 local set = p+recoil
                 SetGameplayCamRelativePitch(set,0.8)
         end
+end
         
 	end
 end)
