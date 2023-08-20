@@ -1,4 +1,4 @@
-if wx.drunkRecoil then
+if wx.drunkAiming then
     local drunkAiming = false
     
     function Drunk()
