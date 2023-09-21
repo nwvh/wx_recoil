@@ -44,7 +44,9 @@ if wx.verticalRecoil then
                 elseif sniper then recoil = recoil * wx.recoilMultipliers["SNIPER"]
                 end
                 local set = p+recoil
-                SetGameplayCamRelativePitch(set,0.8)
+		if not wx.whitelistedWeapons[GetHashKey(_wep)] then
+                	SetGameplayCamRelativePitch(set,0.8)
+		end
             end
     end
         
